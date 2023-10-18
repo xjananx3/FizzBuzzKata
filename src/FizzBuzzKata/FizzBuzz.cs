@@ -7,8 +7,22 @@ public class FizzBuzz
         var zahlen = new List<string>();
         
         for(int i = 1; i <= groesse; i++)
-            zahlen.Add(DoFizzBuZZ(i));
+            zahlen.Add(DoFizzBuzZ(i));
         
         return zahlen;
+    }
+
+    private static string DoFizzBuzZ(int zahl)
+    {
+        if (zahl % 3 == 0)
+            return "Fizz";
+
+        if (zahl % 5 == 0)
+            return "Buzz";
+
+        if (zahl % 3 == 0 && zahl % 5 == 0)
+            return "FizzBuzZ";
+
+        return zahl.ToString();
     }
 }
