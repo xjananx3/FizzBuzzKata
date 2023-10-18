@@ -4,7 +4,7 @@ using FizzBuzzKata;
 
 Console.WriteLine("FizzBuzZ");
 
-var ergebnis = FizzBuzz.FizzBuzzListe(10);
+var ergebnis = FizzBuzz.FizzBuzzListe(100);
 
 foreach (var element in ergebnis)
 {

@@ -14,14 +14,14 @@ public class FizzBuzz
 
     private static string DoFizzBuzZ(int zahl)
     {
+        if (zahl % 3 == 0 && zahl % 5 == 0)
+            return "FizzBuzZ";
+        
         if (zahl % 3 == 0)
             return "Fizz";
 
         if (zahl % 5 == 0)
             return "Buzz";
-
-        if (zahl % 3 == 0 && zahl % 5 == 0)
-            return "FizzBuzZ";
 
         return zahl.ToString();
     }
